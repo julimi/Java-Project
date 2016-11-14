@@ -1,7 +1,0 @@
-Java: Java(TM) SE Runtime Environment
-Java Version: 1.8.0_91
-OS Name: Mac OS X
-OS Version: 10.11.3
-OS Architecture: x86_64
-Total Memory (MB): 61
-Max Memory (MB): 910
