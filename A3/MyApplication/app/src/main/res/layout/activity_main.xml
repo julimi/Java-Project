@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCCCCCC"
+    tools:context=".MainActivity">
+
+    <!-- Top Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/selector"
+            android:src="@mipmap/a" />
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/eraser"
+            android:src="@mipmap/b" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/line"
+            android:src="@mipmap/c" />
+
+        <ImageButton
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/rectangle"
+            android:src="@mipmap/e" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/circle"
+            android:src="@mipmap/d" />
+
+        <ImageButton
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/filler"
+            android:src="@mipmap/f" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+            android:id="@+id/paint_colors"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+
+
+                <ImageButton
+                android:layout_width="@dimen/large_line"
+                android:layout_height="@dimen/large_line"
+                android:layout_margin="2dp"
+                android:background="#FF003300"
+                android:contentDescription="@string/line"
+                android:onClick="colorClick"
+                android:src="@drawable/draw"
+                android:tag="#FF003300" />
+
+
+                <ImageButton
+                android:layout_width="@dimen/large_line"
+                android:layout_height="@dimen/large_line"
+                android:layout_margin="2dp"
+                android:background="#FFFF0000"
+                android:contentDescription="@string/line"
+                android:onClick="colorClick"
+                android:src="@drawable/draw"
+                android:tag="#FFFF0000" />
+
+                <ImageButton
+                android:layout_width="@dimen/large_line"
+                android:layout_height="@dimen/large_line"
+                android:layout_margin="2dp"
+                android:background="#FFFFCC00"
+                android:contentDescription="@string/line"
+                android:onClick="colorClick"
+                android:src="@drawable/draw"
+                android:tag="#FFFFCC00" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/paint_sizes"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btn9"
+                android:layout_width="@dimen/large_line"
+                android:layout_height="@dimen/large_line"
+                android:layout_margin="2dp"
+                android:contentDescription="@string/sml"
+                android:src="@drawable/sm"
+                android:background="#c8e2c8" />
+
+            <ImageButton
+                android:id="@+id/btn10"
+                android:layout_width="@dimen/large_line"
+                android:layout_height="@dimen/large_line"
+                android:layout_margin="2dp"
+                android:contentDescription="@string/med"
+                android:src="@drawable/md"
+                android:background="#c8e2c8" />
+
+            <ImageButton
+                android:id="@+id/btn11"
+                android:layout_width="@dimen/large_line"
+                android:layout_height="@dimen/large_line"
+                android:layout_margin="2dp"
+                android:contentDescription="@string/lrg"
+                android:src="@drawable/lg"
+                android:background="#c8e2c8" />
+
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btn7"
+                android:layout_width="@dimen/large_line"
+                android:layout_height="@dimen/large_line"
+                android:layout_margin="2dp"
+                android:contentDescription="@string/newfile"
+                android:src="@mipmap/newfile1" />
+
+            <ImageButton
+                android:id="@+id/btn8"
+                android:layout_width="@dimen/large_line"
+                android:layout_height="@dimen/large_line"
+                android:layout_margin="2dp"
+                android:contentDescription="@string/save"
+                android:src="@mipmap/document_save" />
+
+            <ImageButton
+                android:id="@+id/btn12"
+                android:layout_width="@dimen/large_line"
+                android:layout_height="@dimen/large_line"
+                android:layout_margin="2dp"
+                android:onClick="loadClick"
+                android:contentDescription="@string/load"
+                android:src="@mipmap/folder_open" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- Custom View -->
+    <com.example.kuilikmi.myapplication.Drawing
+        android:id="@+id/drawing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:background="#FFFFFFFF" />
+
+
+</LinearLayout>

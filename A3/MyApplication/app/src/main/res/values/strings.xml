@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="selector">Selector</string>
+    <string name="eraser">Eraser</string>
+    <string name="line">Line</string>
+    <string name="rectangle">Rectangle</string>
+    <string name="circle">Circle</string>
+    <string name="filler">Filler</string>
+    <string name="newfile">New</string>
+    <string name="save">Save</string>
+    <string name="load">Load</string>
+    <string name="sml">Small</string>
+    <string name="med">Medium</string>
+    <string name="lrg">Large</string>
+
+</resources>
